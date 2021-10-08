@@ -21,13 +21,7 @@ h2{
 }
 
 
-th {
-    size: 42pt;
-    color: white;
-    font-weight: 700;
-}
-
-table, td {                 /** How to make unique id for these*/
+table, td {                 /** How to make unique id for these/why shoudent we make all elements unique*/
     border: solid;
     border-color: black;
     font-size: 12px;
@@ -52,12 +46,10 @@ img {
 
 }
 #controlCenterTable{
-    border-radius: 5px;
+    border-radius: 25px;    /** how to get this to be rounded */
     color: white;
     size: 12pt;
     font-family: Arial;
-
-
 }
 
 
