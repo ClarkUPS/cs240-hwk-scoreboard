@@ -7,49 +7,52 @@
     padding: 10px;
 }
 
+/**Title for Field*/
 h1{
-    size: 28pt;
-    font-family: Arial,;
     color: white; 
-}
-
-h2{
     size: 28pt;
     font-family: Arial,;
+}
+/**Title for Control Center*/
+h2{
     color: white;
+    size: 28pt;
+    font-family: Arial,;
     align-items: center;
 }
 
 
-table, td {                 /** How to make unique id for these/why shoudent we make all elements unique*/
-    border: solid;
+#innerTable td {                 /** How to make unique id for these/why shoudent we make all elements unique*/
     border-color: black;
+    border: solid;
     font-size: 12px;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
 }
-table, th {
-    border-collapse: collapse;
-    border-style: solid;
-    border-color: white;
+th {
+    border-style: none;
     border-spacing: 4px;
 }
 img {
-    width: 128px;
+    width: 120px;
     float: right;
 }
 
 #controlCenter{
     background-color: black;
-    border-radius: 25;
+    border-radius: 25px;
     width: fit-content;
 
 }
 #controlCenterTable{
-    border-radius: 25px;    /** how to get this to be rounded */
     color: white;
+    border-radius: 25px; 
     size: 12pt;
     font-family: Arial;
 }
 
+#outerTableBox{
+    border-collapse: collapse;
+  
+}
 
