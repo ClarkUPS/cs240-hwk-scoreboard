@@ -1,5 +1,5 @@
 /* Your CSS definitions here */
-div {
+#clarkFeild {
     background: rgb(50, 100, 85);
     border: 10px;
     border-color: black;
@@ -13,6 +13,12 @@ h1{
     color: white; 
 }
 
+h2{
+    size: 28pt;
+    font-family: Arial,;
+    color: white;
+    align-items: center;
+}
 
 
 th {
@@ -21,15 +27,37 @@ th {
     font-weight: 700;
 }
 
-table, td {
+table, td {                 /** How to make unique id for these*/
     border: solid;
     border-color: black;
     font-size: 12px;
     text-align: center;
+    padding: 3px;
 }
 table, th {
+    border-collapse: collapse;
     border-style: solid;
     border-color: white;
+    border-spacing: 4px;
+}
+img {
+    width: 128px;
+    float: right;
+}
+
+#controlCenter{
+    background-color: black;
+    border-radius: 25;
+    width: fit-content;
+
+}
+#controlCenterTable{
+    border-radius: 5px;
+    color: white;
+    size: 12pt;
+    font-family: Arial;
+
+
 }
 
 
