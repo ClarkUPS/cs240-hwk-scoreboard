@@ -1,1 +1,35 @@
 /* Your CSS definitions here */
+div {
+    background: rgb(50, 100, 85);
+    border: 10px;
+    border-color: black;
+    width: fit-content;
+    padding: 10px;
+}
+
+h1{
+    size: 28pt;
+    font-family: Arial,;
+    color: white; 
+}
+
+
+
+th {
+    size: 42pt;
+    color: white;
+    font-weight: 700;
+}
+
+table, td {
+    border: solid;
+    border-color: black;
+    font-size: 12px;
+    text-align: center;
+}
+table, th {
+    border-style: solid;
+    border-color: white;
+}
+
+
