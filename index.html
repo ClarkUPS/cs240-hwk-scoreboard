@@ -29,7 +29,7 @@
             <th>R</th> 
             <tbody>
               </tr>
-              <td style="border: none; color: white; font-weight: 700;" >AWAY </td><!--Clear formatting with border-->
+              <td class="homeAwayCells" style="border: none;" >AWAY </td><!--Clear formatting with border-->
               <td> 0 </td>
               <td> 0 </td>
               <td> 0 </td>
@@ -37,10 +37,10 @@
               <td> 0 </td>
               <td> 0 </td>
               <td> 0 </td>
-              <td> 0 </td>
+              <td style="color:white"> 0 </td>
             <tr>   
             <tr>
-              <td class=homeAwayCells>HOME</td> <!--Clear formatting with border-->
+              <td class="homeAwayCells" style="border: none;" >HOME</td> <!--Clear formatting with border-->
               <td> 0 </td>
               <td> 0 </td>
               <td> 0 </td>
@@ -48,7 +48,7 @@
               <td> 0 </td>
               <td> 0 </td>
               <td> 0 </td>
-              <td> 0 </td>
+              <td style="color: white"> 0 </td>
             </tr>
           </tbody>
         </thead>
@@ -71,18 +71,29 @@
       <table id = "controlCenterTable">
         <!--First row-->
         <tr>
-          <td>Who:
+          <td>Who:</td>
             <td>
-            </td>
-             <label for="team" id="team">
-             <section name=Home_or_Away id = Home_or_Away> <!--Why does this not create a drop down menu-->
+            <section name=Home_or_Away id = Home_or_Away> <!--Why does this not create a drop down menu-->
               <option value="Away">Away</option>
               <option value="Home">Home</option>
             </section> 
-            </label>
           </td>
+          <td>
+            Inning:
           </td>
-          
+          <td>
+            <section name= inning >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </section>
+          </td>
+         
+         
         <!--Second row-->
         <tr>
           <td>Runs:</td>
