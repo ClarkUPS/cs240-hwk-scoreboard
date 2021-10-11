@@ -1,58 +1,60 @@
 /* Your CSS definitions here */
 #clarkFeild {
-    background: rgb(50, 100, 85);
-    border: 10px;
-    border-color: black;
-    width: fit-content;
-    padding: 10px;
+  background: rgb(50, 100, 85);
+  border: 10px;
+  border-color: black;
+  width: fit-content;
+  padding: 10px;
 }
 
 /**Title for Field*/
-h1{
-    color: white; 
-    size: 28pt;
-    font-family: Arial,;
+h1 {
+  color: white;
+  size: 28pt;
+  font-family: Arial;
+  font-weight: 700;
 }
 /**Title for Control Center*/
-h2{
-    color: white;
-    size: 28pt;
-    font-family: Arial,;
-    align-items: center;
+h2 {
+  color: white;
+  size: 28pt;
+  font-family: Arial;
+  align-items: center;
 }
 
-
-#innerTable td {                 /** How to make unique id for these/why shoudent we make all elements unique*/
-    border-color: black;
-    border: solid;
-    font-size: 12px;
-    text-align: center;
-    padding: 5px;
+#innerTable td {
+  /** How to make unique id for these/why shoudent we make all elements unique*/
+  border-color: black;
+  border: solid;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
 }
 th {
-    border-style: none;
-    border-spacing: 4px;
+  color: white;
+  border-style: none;
+  border-spacing: 4px;
 }
 img {
-    width: 120px;
-    float: right;
+  width: 120px;
+  float: right;
 }
 
-#controlCenter{
-    background-color: black;
-    border-radius: 25px;
-    width: fit-content;
-
+#controlCenter {
+  background-color: black;
+  border-radius: 25px;
+  width: fit-content;
 }
-#controlCenterTable{
-    color: white;
-    border-radius: 25px; 
-    size: 12pt;
-    font-family: Arial;
-}
-
-#outerTableBox{
-    border-collapse: collapse;
-  
+#controlCenterTable {
+  color: white;
+  border-radius: 25px;
+  size: 12pt;
+  font-family: Arial;
 }
 
+#homeAwayCells {
+  border: none;
+  color: white;
+  size: 12pt;
+  font-weight: 700;
+}
