@@ -31,24 +31,24 @@
               </tr>
               <td class="homeAwayCells" style="border: none;" >AWAY </td><!--Clear formatting with border-->
               <td id= "away1"> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td style="color:white"> 0 </td>
+              <td id= "away2"> 0 </td>
+              <td id= "away3"> 0 </td>
+              <td id= "away4"> 0 </td>
+              <td id= "away5"> 0 </td>
+              <td id= "away6"> 0 </td>
+              <td id= "away7"> 0 </td>
+              <td id = "awaySum" style="color:white"> 0 </td>
             <tr>   
             <tr>
               <td class="homeAwayCells" style="border: none;" >HOME</td> <!--Clear formatting with border-->
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td> 0 </td>
-              <td style="color: white"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "home1"> 0 </td>
+              <td id= "homeSum" style="color: white"> 0 </td>
             </tr>
           </tbody>
         </thead>
@@ -73,20 +73,19 @@
         <tr>
           <td>Who:</td>
             <td>
-            <section name=Home_or_Away id = Home_or_Away> <!--Why does this not create a drop down menu-->
+            <select name=Home_or_Away id = Home_or_Away> <!--Why does this not create a drop down menu-->
               <option value="Away">Away</option>
               <option value="Home">Home</option>
-            </section> 
+            </select> 
           </td>
           <td>
             Inning:
           </td>
           <td>
-            <button onclick="dropdown" class="dropdownButton"> plus </button>
-
+           
             
             <select name= inning >
-              <option value="1">1</option>
+              <option value="1"> value </option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -100,6 +99,8 @@
         <!--Second row-->
         <tr>
           <td>Runs:</td>
+          <td> <button id= "plusButton" onclick=addTo()   class="dropdownButton"> + </button>  </td>
+          <td> <button id= "minusButton" onclick=subFrom() class="dropdownButton"> - </button>  </td>
         </tr>
         <!--Third row-->
         <tr>
