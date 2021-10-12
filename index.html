@@ -29,7 +29,7 @@
             <th>R</th> 
             <tbody>
               </tr>
-              <td class="homeAwayCells" style="border: none;" >AWAY </td><!--Clear formatting with border-->
+              <td class="homeAwayCells" style="border: none;" >AWAY </td>
               <td id= "away1"> 0 </td>
               <td id= "away2"> 0 </td>
               <td id= "away3"> 0 </td>
@@ -56,7 +56,7 @@
     </td>
       
       <td>
-      <img src='images/ups.png'> <!--why not included in div when floated?-->
+      <img src='images/ups.png'> 
       </td>
 
     </tr>
@@ -85,7 +85,7 @@
            
             
             <select name= inning >
-              <option value="1"> value </option>
+              <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -99,21 +99,24 @@
         <!--Second row-->
         <tr>
           <td>Runs:</td>
-          <td> <button id= "plusButton" onclick=addTo()   class="dropdownButton"> + </button>  </td>
-          <td> <button id= "minusButton" onclick=subFrom() class="dropdownButton"> - </button>  </td>
+          <td> 
+            <span> 
+              <button id= "plusButton" onclick=addTo() > + </button>
+              <button id= "minusButton" onclick=subFrom()> - </button>
+            </span> 
+        </td>
+          <td>   </td>
         </tr>
         <!--Third row-->
         <tr>
           <td>Sound:</td>
-          <td> 
-              
-        </td>
+          <td>
+            <span>
+              <button id="randomMusic" onclick=playRandomSong()>	♫ </button>
+              <button id = "chickenSong" onclick=playChicenSong()> 🎹 </button>
+            </span>
         </tr>
-        
-
-
       </table>
-
     </div>
  
     <script src="app.js"></script>

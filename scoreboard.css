@@ -5,8 +5,6 @@
   border-color: black;
   width: fit-content;
   padding: 10px;
-  text-align: center;
-  
 }
 
 /**Title for Field*/
@@ -15,26 +13,25 @@ h1 {
   size: 28pt;
   font-family: Arial;
   font-weight: 700;
+  text-align: center;
 }
 /**Title for Control Center*/
 h2 {
   color: white;
   size: 28pt;
   font-family: Arial;
-  align-items: center;
-  padding: 10px;
-  border: 3px;
+  text-align: center;
 }
 
 #innerTable td {
   /** How to make unique id for these/why shoudent we make all elements unique*/
   border-color: black;
   border: solid;
-  font-size: 12px;
+  font-size: 12pt;
   text-align: center;
   padding: 5px;
-  
 }
+
 th {
   color: white;
   border-style: none;
@@ -45,11 +42,13 @@ img {
   float: right;
 }
 
+/** Div box around control center */
 #controlCenter {
   background-color: black;
   border-radius: 25px;
   width: fit-content;
 }
+/** table pre-sets  */
 #controlCenterTable {
   color: white;
   border-radius: 25px;
@@ -58,8 +57,8 @@ img {
 }
 
 .homeAwayCells {
+  border: none;
   color: white;
   size: 12pt;
   font-weight: 700;
-  border: none;
 }
