@@ -1,8 +1,15 @@
 //Feilds for storing data
-away = new Array(); //to store values
-home = new Array();
+var away = new Array(); //to store values
+var home = new Array();
 awayTotal = 0;
 homeTotal = 0;
+
+//initalize arrays
+for (let i = 0; i < 8; i++) {
+  away.push(0);
+  home.push(0);
+}
+
 
 //Functions:
 
@@ -12,7 +19,9 @@ function addTo() {
   let number = inning.value; //The inning
 
   if (target == "Away") {
-    mainTable.row[0].cells[number].innerHTML = 30;
+
+    away.splice(target,1,away[target-1]+1) ;
+    alert(away);
   } else {
   }
 }
@@ -43,4 +52,9 @@ function playRandomSong() {
     var audio = new Audio("sounds/charge2.mp3");
   }
   audio.play();
+
+  let imageSwitch = document.querySelector(mainImage);
+  imageSwitch.innerHTML = images/megaphone.png
+
+
 }

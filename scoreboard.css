@@ -39,7 +39,6 @@ th {
 }
 img {
   width: 120px;
-  float: right;
 }
 
 /** Div box around control center */
@@ -62,3 +61,5 @@ img {
   size: 12pt;
   font-weight: 700;
 }
+
+
