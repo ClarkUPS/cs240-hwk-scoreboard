@@ -16,22 +16,28 @@ function addTo() {
   var number = parseInt(inning.value); //The inning
 
   if (target == "Away") {
-    let tempNum = Away[number] + 1;
+    let tempNum = Away[number] + 1; 
     Away.splice(number,1,tempNum);
     
-    
     let templist = document.querySelectorAll('td[id^="away"]');//groups all tags together
-    templist[number-1].innerHTML = Away[number];
-
+    templist[number - 1].innerHTML = Away[number];
     
-      
-    //innerHTML(Away[number]); //get specific
-   // alert(templist);
-
-    //updates tag
+    //Add to R
+    awayTotal++
+    templist[7].innerHTML = awayTotal;
+    
 
   } else {
-    //do the same but for Home
+    let tempNum = Home[number] + 1;
+    Home.splice(number, 1, tempNum);
+
+
+    let templist = document.querySelectorAll('td[id^="home"]');//.Group all home ids
+    templist[number - 1].innerHTML = Home[number];
+
+    //Add to R
+    homeTotal++
+    templist[7].innerHTML = homeTotal;
   }
 }
 
