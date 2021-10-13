@@ -7,7 +7,14 @@ homeTotal = 0;
 //Functions:
 
 function addTo() {
-  alert(home_or_away);
+  var mainTable = document.getElementById("innerTable");
+  let target = Home_or_Away.value; //Home or away
+  let number = inning.value; //The inning
+
+  if (target == "Away") {
+    mainTable.row[0].cells[number].innerHTML = 30;
+  } else {
+  }
 }
 
 function subFrom() {}
@@ -28,7 +35,6 @@ function playChicenSong() {
 
 function playRandomSong() {
   let randNumber = Math.floor(Math.random() * 3) + 1;
-  var audio = new Audio();
   if (randNumber == 1) {
     var audio = new Audio("sounds/buildup.mp3");
   } else if (randNumber == 2) {
