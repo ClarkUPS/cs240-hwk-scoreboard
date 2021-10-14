@@ -32,10 +32,13 @@ h2 {
   padding: 5px;
 }
 
+/** Default for the table headings */
 th {
   color: white;
   border-style: none;
   border-spacing: 4px;
+
+  /** The default image size */
 }
 img {
   width: 120px;
@@ -45,7 +48,10 @@ img {
 #controlCenter {
   background-color: black;
   border-radius: 25px;
-  width: fit-content;
+  width:max-content;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0px;
 }
 /** table pre-sets  */
 #controlCenterTable {
@@ -55,6 +61,7 @@ img {
   font-family: Arial;
 }
 
+/** For the cells which lable the rows. */
 .homeAwayCells {
   border: none;
   color: white;

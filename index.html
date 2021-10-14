@@ -6,8 +6,8 @@
 
   </head>
   <body>
-    <!--Span to encompas the table box -->
-    <div id="clarkFeild">
+    
+    <div id="clarkFeild"> <!--First div. Encompases the first green box-->
       <h1> CLARK FIELD </h1>
 
       <table id="Outertable">
@@ -18,7 +18,7 @@
         <thead>
           <!--Table headers-->
           <tr>
-            <th></th> <!-- Do not need border for this cell-->
+            <th></th> 
             <th>1</th>
             <th>2</th>
             <th>3</th>
@@ -28,7 +28,7 @@
             <th>7</th>
             <th>R</th> 
             <tbody>
-              </tr>
+              </tr> <!--Away rows of the table-->
               <td class="homeAwayCells" style="border: none;" >AWAY </td>
               <td id= "away1"> 0 </td>
               <td id= "away2"> 0 </td>
@@ -39,8 +39,8 @@
               <td id= "away7"> 0 </td>
               <td id = "awaySum" style="color:white"> 0 </td>
             <tr>   
-            <tr>
-              <td class="homeAwayCells" style="border: none;" >HOME</td> <!--Clear formatting with border-->
+            <tr> <!--Home rows of the table-->
+              <td class="homeAwayCells" style="border: none;" >HOME</td> 
               <td id= "home1"> 0 </td>
               <td id= "home1"> 0 </td>
               <td id= "home1"> 0 </td>
@@ -55,7 +55,7 @@
       </table>
     </td>
       
-      <td >
+      <td > <!--Image which can then be switched by other images when music buttons are clicked-->
       <img id="mainImage" src='images/ups.png'> 
       </td>
 
@@ -66,14 +66,14 @@
     </div >
 
 
-    <div id="controlCenter">
+    <div id="controlCenter"> <!--Second div. Encompases control center box-->
       <h2>CONTROL CENTER</h2>
       <table id = "controlCenterTable">
-        <!--First row-->
+        <!--First row with away dropdown and innings dropdown-->
         <tr>
           <td>Who:</td>
             <td>
-            <select name=Home_or_Away id = Home_or_Away> <!--Why does this not create a drop down menu-->
+            <select name=Home_or_Away id = Home_or_Away> 
               <option value="Away">Away</option>
               <option value="Home">Home</option>
             </select> 
@@ -96,7 +96,7 @@
           </td>
          
          
-        <!--Second row-->
+        <!--Second row for plus and minus buttons-->
         <tr>
           <td>Runs:</td>
           <td> 
@@ -107,7 +107,7 @@
         </td>
           <td>   </td>
         </tr>
-        <!--Third row-->
+        <!--Thrid Row for sound buttons-->
         <tr>
           <td>Sound:</td>
           <td>
